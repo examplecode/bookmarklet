@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Bookmarklets</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+</head> 
+<body> 
+<script>
+function installWebApp(url) {
+   if(url.indexOf("http://") !=0) {
+    url = location.href.substring(0,location.href.lastIndexOf('/')) + "/" + url;   
+   }
+    mmbrowser.installWebApp(url);
+}
+</script>
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>Bookmarklets</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+<div class="content-primary">	
+		<ul data-role="listview" data-split-icon="gear" data-split-theme="d">
+    	<li><a href="index.html">
+				<img src="images/plugin.ico" />
+				<h3>Hello</h3>
+				<p>最简单的bookmarklet，用于测试和写bookmarklet模版</p>
+				</a><a href="javascript:installWebApp('hello.zip')" data-rel="dialog" data-transition="slideup">安装
+			</a></li>
+    	<li><a href="index.html">
+				<img src="images/plugin.ico" />
+				<h3>Message</h3>
+				<p>一个小技巧显示来自服务端配置的信息</p>
+				</a><a href="javascript:installWebApp('message.zip')" data-rel="dialog" data-transition="slideup">安装
+			</a></li>
+
+		<li><a href="index.html">
+				<img src="images/plugin.ico" />
+				<h3>稍后读</h3>
+				<p>著名的Pocket提供的浏览器小工具</p>
+				</a><a href="javascript:installWebApp('readlater.zip')" data-rel="dialog" data-transition="slideup">安装
+			</a></li>
+			<li><a href="index.html">
+				
+				<img src="images/plugin.ico" />
+				<h3>豆瓣</h3>
+				<p>豆瓣分享，随时随时随地的分享文章到豆瓣</p>
+				
+			</a><a href="javascript:installWebApp('doubai.zip')" data-rel="dialog" data-transition="slideup">安装
+			</a></li>
+			<li><a href="index.html">
+				<img src="images/plugin.ico" />
+				<h3>阅读模式</h3>
+				<p>Readablity提供的阅读模式工具</p>
+				</a><a href="javascript:installWebApp('readability.zip')" data-rel="dialog" data-transition="slideup">安装
+			</a></li>
+			<li><a href="index.html">
+				<img src="images/plugin.ico" />
+				<h3>自动滚屏</h3>
+				<p>自动滚屏小工具</p>
+				</a><a href="javascript:installWebApp('autoscroll.zip')" data-rel="dialog" data-transition="slideup">安装
+			</a></li>
+			<li><a href="index.html">
+				<img src="images/plugin.ico" />
+				<h3>有道笔记</h3>
+				<p>可以保存网页或网页正文到"有道笔记"</p>
+				</a><a href="javascript:installWebApp('youdaonote.zip')" data-rel="dialog" data-transition="slideup">安装
+			</a></li>
+		<li><a href="index.html">
+				<img src="images/plugin.ico" />
+				<h3>显示页面cookies</h3>
+				<p>改变当前页面的cookies</p>
+				</a><a href="javascript:installWebApp('showcookies.zip')" data-rel="dialog" data-transition="slideup">安装
+			</a></li>
+
+
+		</ul>
+		</div><!--/content-primary -->	
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+</body>
+</html>
+

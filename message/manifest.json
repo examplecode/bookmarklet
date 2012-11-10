@@ -1,0 +1,18 @@
+{
+   "app_icon":"app.png",
+   "app_name":{
+      "en":"message",
+      "zh":"message"
+   },
+   "ex_points":[
+      {
+         "name":"c_menu_addr",
+         "icon":"c_menu_addr.png",
+         "main":"main.js",
+         "title":{
+            "en":"message",
+            "zh":"message"
+         }
+      }
+   ]
+}  

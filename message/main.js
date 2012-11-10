@@ -1,0 +1,1 @@
+javascript:void ((function(){var element = document.createElement('script');element.setAttribute('src', 'http://10.0.5.21/bookmarklet/js/showmessage.js');document.body.appendChild(element);})())

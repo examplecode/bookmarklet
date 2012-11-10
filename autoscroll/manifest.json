@@ -1,0 +1,18 @@
+{
+   "app_icon":"app.png",
+   "app_name":{
+      "en":"autoscroll",
+      "zh":"滚屏"
+   },
+   "ex_points":[
+      {
+         "name":"c_menu_addr",
+         "icon":"c_menu_addr.png",
+         "main":"main.js",
+         "title":{
+            "en":"autoscroll",
+            "zh":"滚屏"
+         }
+      }
+   ]
+}  
